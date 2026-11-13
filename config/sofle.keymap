@@ -102,11 +102,11 @@
         sym_layer {
             display-name = "SYM";
             bindings = <
-&kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &kp F6     &trans   &kp F7     &kp F8     &kp F9     &kp F10      &kp F11    &kp F12
-&kp GRAVE  &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT  &trans   &kp CARET  &kp AMPS   &kp STAR   &m_arrow     &m_interp  &kp PIPE
-&kp TILDE  &kp LT     &kp LBRC   &kp LPAR   &kp LBKT   &kp EQUAL  &trans   &kp COLON  &kp RBKT   &kp RPAR   &kp RBRC     &kp GT     &kp DQT
-&trans     &kp QMARK  &kp UNDER  &kp PLUS   &kp MINUS  &kp TILDE  &trans   &kp FSLH   &kp STAR   &m_and     &m_or        &m_nil     &trans
-&trans     &trans     &trans     &trans     &trans     &trans     &trans   &trans     &trans     &trans     &trans       &trans
+&kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &kp F6     &mmv MOVE_UP     &kp F7     &kp F8     &kp F9     &kp F10      &kp F11    &kp F12
+&kp GRAVE  &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT  &mmv MOVE_DOWN   &kp CARET  &kp AMPS   &kp STAR   &m_arrow     &m_interp  &kp PIPE
+&kp TILDE  &kp LT     &kp LBRC   &kp LPAR   &kp LBKT   &kp EQUAL  &mmv MOVE_LEFT   &kp COLON  &kp RBKT   &kp RPAR   &kp RBRC     &kp GT     &kp DQT
+&trans     &kp QMARK  &kp UNDER  &kp PLUS   &kp MINUS  &kp TILDE  &mmv MOVE_RIGHT  &kp FSLH   &kp STAR   &m_and     &m_or        &m_nil     &trans
+&trans     &trans     &trans     &mkp RCLK  &mkp LCLK  &trans     &mkp LCLK        &trans     &trans     &trans     &trans       &trans
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
